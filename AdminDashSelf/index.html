@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <aside>
+          <i class="fa-solid fa-xmark closeBtn"></i>
+          <div class="logo">
+            <h3>LOGO</h3>
+          </div>
+          <div class="image">
+            <div class="img">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <h5>Akshay</h5>
+            <h6>Pro Plan</h6>
+          </div>
+          <div class="sidebar">
+            <p>Menu</p>
+            <ul>
+              <li>
+                <a href="#" class="active"
+                  ><i class="fa-solid fa-table-columns"></i>
+                  <h5>Dashboard</h5>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-chart-line"></i>
+                  <h5>Analytics</h5>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-message"></i>
+                  <h5>Messages</h5>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-gear"></i>
+                  <h5>Settings</h5>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="logout">
+            <a href="#"
+              ><i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <h5>Logout</h5></a
+            >
+          </div>
+        </aside>
+      </nav>
+
+      <!-- ============= END OF SIDEBAR =============== -->
+      <section class="section">
+        <div class="dash">
+          <div class="menu">
+            <h2>Dashboard</h2>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="search">
+            <div class="bar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="search" placeholder="Search" />
+            </div>
+            <div class="bell">
+                <div class="dot"></div>
+                <i class="fa-solid fa-bell"></i>
+            </div>
+          </div>
+        </div>
+        <div class="folders">
+          <h4>My Folders</h4>
+          <p>Documents, Photos, Music</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-folder"></i>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <h6>Documents</h6>
+            <div class="bottom">
+              <small>112 Files</small>
+              <small>26 GB</small>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-image"></i>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <h6>Images</h6>
+            <div class="bottom">
+              <small>1540 Files</small>
+              <small>86 GB</small>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-music"></i>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <h6>Music</h6>
+            <div class="bottom">
+              <small>150 Files</small>
+              <small>18 GB</small>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-box-open"></i>
+            <div class="right">
+              <h6>Available Storage</h6>
+              <small>130GB/260GB</small>
+            </div>
+          </div>
+        </div>
+        <!-- ======== END OF CARDS ============ -->
+        <div class="bottom_boxes">
+          <section class="favourites">
+            <h2>Favourites</h2>
+            <div class="favourite">
+              <div class="photo">
+                <h4>Photos</h4>
+              </div>
+              <div class="files">
+                <p>4524 files</p>
+              </div>
+              <div class="filesize">
+                <h6>1.2 GB</h6>
+              </div>
+            </div>
+            <div class="favourite">
+              <div class="photo">
+                <h4>Videos</h4>
+              </div>
+              <div class="files">
+                <p>15245 files</p>
+              </div>
+              <div class="filesize">
+                <h6>52.2 GB</h6>
+              </div>
+            </div>
+            <div class="favourite">
+              <div class="photo">
+                <h4>Files</h4>
+              </div>
+              <div class="files">
+                <p>1524 files</p>
+              </div>
+              <div class="filesize">
+                <h6>5.7 GB</h6>
+              </div>
+            </div>
+          </section>
+          <section class="recentfiles">
+            <h2>Recent Files</h2>
+            <div class="recent">
+              <div class="icon">
+                <i class="fa-solid fa-face-smile"></i>
+                <h4>Family.jpg</h4>
+              </div>
+              <div class="size">
+                <p>12MB</p>
+              </div>
+              <div class="time">
+                <h6>10 OCT 22</h6>
+              </div>
+            </div>
+            <div class="recent">
+              <div class="icon">
+                <i class="fa-solid fa-briefcase"></i>
+                <h4>Work.jpg</h4>
+              </div>
+              <div class="size">
+                <p>12MB</p>
+              </div>
+              <div class="time">
+                <h6>10 OCT 22</h6>
+              </div>
+            </div>
+            <div class="recent">
+              <div class="icon">
+                <i class="fa-solid fa-champagne-glasses"></i>
+                <h4>Party.jpg</h4>
+              </div>
+              <div class="size">
+                <p>12MB</p>
+              </div>
+              <div class="time">
+                <h6>10 OCT 22</h6>
+              </div>
+            </div>
+            <div class="recent">
+              <div class="icon">
+                <i class="fa-solid fa-tree"></i>
+                <h4>Hawai.jpg</h4>
+              </div>
+              <div class="size">
+                <p>12MB</p>
+              </div>
+              <div class="time">
+                <h6>10 OCT 22</h6>
+              </div>
+            </div>
+            <div class="recent">
+              <div class="icon">
+                <i class="fa-solid fa-menorah"></i>
+                <h4>Enjoy.jpg</h4>
+              </div>
+              <div class="size">
+                <p>12MB</p>
+              </div>
+              <div class="time">
+                <h6>10 OCT 22</h6>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

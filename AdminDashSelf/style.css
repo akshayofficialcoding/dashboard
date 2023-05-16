@@ -1,0 +1,451 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: rgb(238, 238, 238);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 18% 82%;
+  height: 100vh;
+}
+
+.main nav {
+  border-right: 2px solid rgb(255, 255, 255);
+}
+
+aside .fa-xmark {
+  display: none;
+}
+
+.main nav aside .logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.main aside .image {
+  display: grid;
+  place-items: center;
+  margin-top: 4rem;
+}
+
+.main aside .image .img {
+  width: 3rem;
+  height: 3rem;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main aside .image .img i {
+  font-size: 1.5rem;
+}
+
+/* .main .sidebar{
+    position: absolute;
+} */
+
+.main .sidebar p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  color: rgb(3, 182, 189);
+  margin-left: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.main .sidebar ul li {
+  margin: 0 1rem;
+  width: 90%;
+}
+
+.main .sidebar ul li a.active {
+  background: rgb(255, 255, 255);
+}
+
+.main .sidebar ul li a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 3rem;
+  position: relative;
+  transition: 0.3s all ease;
+}
+
+.main .sidebar ul li a.active::before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  background: rgb(5, 147, 190);
+  position: absolute;
+}
+
+.main .sidebar ul li a:hover {
+  background: rgb(255, 255, 255);
+  margin-left: -0.2rem;
+}
+
+.main .sidebar a i {
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  color: blueviolet;
+}
+
+.main .sidebar ul li:nth-child(2) i {
+  color: rgb(218, 3, 3);
+}
+.main .sidebar ul li:nth-child(3) i {
+  color: rgb(143, 148, 141);
+}
+.main .sidebar ul li:nth-child(4) i {
+  color: rgb(3, 71, 218);
+}
+
+.main .sidebar a h5 {
+  color: #000;
+  font-size: 1rem;
+}
+
+.logout a {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: #555;
+  margin-top: 6rem;
+}
+
+.logout a i {
+  margin-left: 1rem;
+}
+
+/* =============== section ============== */
+
+.main .section .dash {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+
+.menu i {
+  display: none;
+}
+
+.main .section .dash .search {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.main .section .dash .bar {
+  background: rgb(255, 255, 255);
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 5rem;
+}
+
+.main .section .dash .bar input[type="search"] {
+  border: none;
+  background: transparent;
+}
+
+.main .section .dash .bell .dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: rgb(231, 19, 19);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 99;
+}
+.main .section .dash .bell i {
+  position: relative;
+}
+
+.main .section .search .bell {
+  font-size: 1.3rem;
+  color: rgb(71, 71, 71);
+}
+
+.main .section .folders {
+  margin-left: 1.5rem;
+}
+
+.main .section .folders h4 {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+.main .section .folders p {
+  font-size: 0.8rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 1.5rem 1.5rem;
+}
+
+.cards .card {
+  background: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: 0.3s all ease;
+}
+
+.cards .card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0.5rem 0.2rem rgba(194, 194, 194, 0.8);
+}
+
+.cards .card .icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards .card .icon i:first-child {
+  font-size: 1.8rem;
+  color: rgb(7, 192, 224);
+}
+
+.cards .card h6 {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.cards .card .bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.cards .card .bottom small:last-child {
+  font-weight: 600;
+}
+
+.cards .card:last-child {
+  background: linear-gradient(#4f2baa, #270350);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: #fff;
+}
+
+.cards .card:last-child i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.cards .card:last-child:hover {
+  box-shadow: 0 0 0.5rem 0.2rem rgba(130, 86, 201, 0.8);
+  cursor: pointer;
+}
+
+/* =========== Bottom boxes ============== */
+
+.bottom_boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0 1.5rem;
+}
+
+/* =========== Favourites ============= */
+.favourites {
+  margin: 0.5rem 0 0 0;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.favourite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  background: rgb(236, 236, 236);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.favourite .files {
+  color: rgb(71, 71, 71);
+  font-size: 0.8rem;
+}
+
+/* =========== RECENT FILES =============== */
+.recentfiles {
+  margin: 0.5rem 0 0 0;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.recentfiles h2 {
+  margin-bottom: 1rem;
+}
+
+.recentfiles .recent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  padding: 0.5rem 1rem;
+}
+.recentfiles .recent:hover {
+  background: rgb(236, 236, 236);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.2rem 0.2rem rgba(173, 173, 173, 0.5);
+}
+
+.recentfiles .recent .icon {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.recentfiles .recent .icon i {
+  width: 2rem;
+  height: 2rem;
+  background: #4f2baa;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.recentfiles .recent .icon h4 {
+  font-weight: 500;
+}
+
+.recentfiles .recent .size {
+  font-size: 0.8rem;
+}
+
+.recentfiles .recent .time {
+  color: rgb(156, 156, 156);
+}
+
+@media screen and (max-width: 900px) {
+  .bottom_boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 0 1.5rem;
+  }
+}
+
+/* ========== MEDIA QUERIES TABLET =========== */
+
+@media screen and (max-width: 1100px) {
+  nav {
+    display: none;
+    position: fixed;
+    background: rgb(247, 247, 247);
+    height: 100%;
+    width: 15rem;
+    left: -100%;
+    top: 0;
+    animation: sideBar 0.4s ease forwards;
+  }
+
+  @keyframes sideBar {
+    to {
+      left: 0;
+    }
+  }
+
+  .main nav {
+    border-right: none;
+  }
+
+  .main .sidebar ul li {
+    width: 100%;
+  }
+
+  aside .fa-xmark {
+    display: block;
+    text-align: end;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .menu i {
+    display: block;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  .main {
+    grid-template-columns: 100%;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cards .card {
+    height: 10rem;
+  }
+  .cards .card .icon i:first-child {
+    font-size: 2.5rem;
+  }
+  .cards .card h6 {
+    font-size: 1.5rem;
+    margin-top: 0.8rem;
+  }
+
+  .cards .card .bottom {
+    font-size: 1.5rem;
+  }
+}
+
+/* ========== MEDIA QUERIES MOBILES =========== */
+
+@media screen and (max-width: 600px) {
+  .dash {
+    display: flex;
+    flex-direction: column;
+  }
+  .dash .search {
+    margin-top: 1rem;
+  }
+  .main .section .folders h4 {
+    font-size: 1.2rem;
+  }
+  .main .section .folders p {
+    font-size: 1rem;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .cards .card:last-child i {
+    font-size: 2.7rem;
+  }
+  .cards .card:last-child h6 {
+    margin-bottom: 1rem;
+  }
+
+  .cards .card:last-child small {
+    font-size: 1.2rem;
+  }
+}
